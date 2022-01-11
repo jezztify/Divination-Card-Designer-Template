@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Divination Card Designer Template v.2.1</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://www.poewiki.net/wiki/MediaWiki:Sitewide.css?action=raw&ctype=text/css" />
+<link rel="stylesheet" href="components/rank/rank.css" />
+<div id="main" align="center" class="container container-fluid">
+  <div class="configuration row">
+    <div id="configuration" class="container col">
+      <form>
+        <div class="form-group row">
+          <div class="col">
+            <h4>Divination Card Designer</h4>
+          </div>
+          <div class="col">
+            <button class="btn btn-success add-more" type="button" id="save">Save</button>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cardTitle" class="col-4 col-form-label">Title</label> 
+          <div class="col-8">
+            <input id="cardTitle" name="text" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-4 col-form-label" for="inputCardTitle"># of Stacks</label> 
+          <div class="col-8">
+            <input id="stacks" name="stacks" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-4 col-form-label" for="inputCardTitle">Image URL</label> 
+          <div class="col-8">
+            <input id="imgurl" name="stacks" type="text" class="form-control">
+          </div>
+        </div>
+        
+        
+        
+        <div id="description-group" class="form-group row">
+          <div class="input-group control-group desc-add-more">  
+            <label for="textarea" class="col-form-label">Description (HTML-tag-enabled)</label> 
+            <div>
+              <button id="desc-add" class="btn btn-success add-more" type="button">+</button>  
+            </div>
+          </div>
+          
+          <!-- Copy Fields -->  
+          <div hidden class="copy hide">  
+            <div class="thisgroup control-group input-group" style="margin-top:10px">  
+              <input type="text" name="addmore[]" class="form-control" placeholder="Enter Text Here">  
+              <div class="input-group-btn">   
+                <button class="btn btn-danger remove" type="button">-</button>  
+              </div>  
+            </div>  
+          </div>
+          <!-- Copy Fields -->  
+        </div>
+        
+<!--         <div class="flavour-group form-group row">
+          <label for="text1" class="col-form-label">Flavour Text (HTML-tag-enabled)</label> 
+
+        </div>  -->
+        <div id="flavour-group" class="form-group row">
+          <div class="input-group control-group flavour-add-more">  
+            <label for="textarea" class="col-form-label">Flavour Text (HTML-tag-enabled)</label> 
+            <div>
+              <button id="flavour-add" class="btn btn-success add-more" type="button">+</button>  
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <!-- SEPARATOR -->
+    <div class="col">
+      <div id="divCardView" class="divicard-wrapper text-center">
+        <span id="art" class="divicard-art"><img id="cardImg" alt="" src="https://dl.dropboxusercontent.com/s/p9lmkh5rlzzf3rw/Seven_Years_Bad_Luck_card_art.png" decoding="async" loading="lazy" data-file-width="390" data-file-height="280" width="390" height="280"></span>
+        <span class="divicard-frame"><img alt="" decoding="async" loading="lazy" data-file-width="440" data-file-height="668" width="440" height="668" src="https://dl.dropboxusercontent.com/s/64v1jmc5t4tfv6x/Divination_card_frame.png"></span>
+        <div class="divicard-frame"></div>
+        <span class="divicard-header">Some Title</span>
+        <span class="divicard-stack">69</span>
+        <span class="divicard-reward">
+          <span id="description-span">
+            <span class="text-color -currency">TEXT</span><br>
+            
+            <span class="text-color -mod">TEXT</span><br>
+            
+            <span class="text-color -unique">TEXT</span><br>
+            
+            <span class="text-color -corrupted">TEXT</span><br>
+            
+            <span class="text-color -prophecy">TEXT</span>
+          </span>
+        </span>
+        <span class="divicard-flavour text-color -flavour">
+          <span id="flavour-span">
+            <span>Some words<br>you wanna put here</span>
+          </span>
+        </span>
+        <span class="copyright">
+          <span class="text-color -currency">Credits: CSS and Divination Card Art by <a href="https://www.poewiki.net">POEWIKI.NET</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

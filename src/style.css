@@ -1,0 +1,65 @@
+/*IMPORTING THE FONTS*/
+@font-face {
+    font-family: 'Fontin-SmallCaps';
+    src: url('https://dl.dropboxusercontent.com/s/hs9liptpyvgnvvo/Fontin-SmallCaps.ttf') format('truetype');
+}
+#main {
+  padding-top: 20px;
+}
+#divCardView {
+  font-family: 'Fontin-SmallCaps';
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 440px;
+  height: 668px;
+}
+
+.copyright {
+  display: table;
+  position: absolute;
+  top: 620px;
+  left: 35px;
+  font-size: 16px;
+}
+
+.copyright > span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.configuration {
+  font-family: 'Fontin-SmallCaps';
+  background-color: grey;
+  width: 100%;
+}
+
+.configuration h4 {
+  font-family: 'Fontin-SmallCaps';
+}
+
+.form-group {
+  padding-top: 10px;
+  width: 110%;
+  font-family: 'Verdana';
+}
+
+#description-span {
+  padding-top: 20px;
+}
+
+.text-color {
+  font-size: 100%; 
+}
+
+input[type="text"]
+{
+    font-size:10px;
+}
+
+label {
+  padding-top: 8px;
+  padding-right: 10px;
+}
